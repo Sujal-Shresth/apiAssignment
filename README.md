@@ -1,3 +1,3 @@
 ## Deployed link:
 
-[Deployed Link] (
+[Deployed Link] (https://sujal-shresth.github.io/apiAssignment/)
