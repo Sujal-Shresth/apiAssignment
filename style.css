@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;900&display=swap");
+
+body {
+    background-color: #292929;
+    color: white;
+    font-family: Poppins;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+#h1 {
+    z-index: -4;
+    font-size: 2.5rem;
+}
+
+.sidebar {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    background-color: #333;
+    color: white;
+    width: 300px;
+    padding: 20px;
+    padding-left: 40px;
+    box-sizing: border-box;
+}
+
+.sidebar h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    font-size: 1.5rem;
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    padding: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out, font-weight 1s ease-in-out, background-color 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.sidebar li:hover {
+    font-size: 1.5rem;
+    color: black;
+    transform: scale(1.1) translateX(1rem);
+    background-color: #1d1d1d;
+    font-weight: 500;
+}
+
+img {
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+    height: 30vh;
+}
+
+#emptySpace {
+    height: 30vh;
+}
+
+.content {
+    position: relative;
+    flex: 1;
+    padding: 50px;
+    box-sizing: border-box;
+    margin-left: 300px;
+}
+
+.news-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-gap: 40px;
+}
+
+article {
+    background-color: #333;
+    border: 1px solid #555555;
+    border-radius: 10px;
+    padding: 2rem;
+    box-sizing: border-box;
+    transition: all 0.5s ease-in-out;
+}
+
+article:hover {
+    transform: scale(1.025);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+article h2 {
+    font-weight: 900;
+    font-size: 1.75rem;
+    margin-bottom: 30px;
+}
+
+p {
+    font-size: 1.25rem;
+    text-align: justify;
+}
+
+#popup {
+    z-index: 1;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #1d1d1dbb;
+}
+
+#message {
+    font-size: 2rem;
+}
